@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="update.css">
+</head>
+<body>
+    <!--form for updating task-->
+   
+    <form class="updateForm" id="updateForm" onsubmit="return false;">
+        <div>
+            <p>ID:<span id="taskID"></span></p>
+        </div>
+
+        <div>
+           <label>Your Name</label>
+           <input type="text" id="updatename" required placeholder="enter name" style="height: 25px;font-size: 15px;border: 1px solid black;"><br><br>
+        </div>
+     
+        <div>
+           <label>Task Name</label>
+           <input type="text" id="updatetaskName" required placeholder="enter taskName" style="height: 25px;font-size: 15px;border: 1px solid black;"><br><br>
+        </div>
+
+        <div>
+         <label>completed</label>
+         <input type="checkbox" id="taskcomplete">
+        </div>
+     
+        <div>
+           <input type="submit" class="submit" onclick="updateTask()">&nbsp;
+           <a class="cancel" href="index.html">cancel</a>
+        </div>
+     </form>
+
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     <script src="update.js"></script>
+</body>
+</html>

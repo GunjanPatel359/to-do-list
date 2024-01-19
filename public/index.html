@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo app</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <p class="headtext">todo list</p>
+    <p class="headline">list your daily goals here</p>
+
+
+    <div class="container">
+        <div class="taskContainer">
+            <!--createTask-->
+            <div class="createTask" onclick="displayForm()" style="cursor: pointer;">
+                <div class="icon">+</div>
+                <h3 class="createTaskText">Create Your Task</h3>
+            </div>
+            <!--Task from the list-->
+            <div class="alltaskcontainer"></div>
+            <!-- <div class="tasks">
+                <div class="name">GUNJAN</div>
+                <h3 class="taskName">TODO</h3>
+                <div class="btnGroup">
+                    <button class="editBtn">Edit</button>
+                    <button class="deleteBtn">Delete</button>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+    <!--forms-->
+    <!--form for creating task-->
+    <form class="form" id="form" onsubmit="return false;">
+        <div>
+           <label>Your Name</label><br>
+           <input type="text" id="name" required placeholder="enter name" style="height: 30px;font-size: 17px;border: 1px solid black;"><br><br>
+        </div>
+     
+        <div>
+           <label>Task Name</label><br>
+           <input type="text" id="taskName" required placeholder="enter taskName" style="height: 30px;font-size: 17px;border: 1px solid black;"><br><br>
+        </div>
+     
+        <div>
+           <input type="submit" class="submit" onclick="createTask()">&nbsp;
+           <input type="reset" class="reset"><br><br>
+        </div>
+     
+        <div>
+           <button class="cancel" onclick="cancelForm()">cancel</button>
+        </div>
+     </form>
+
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

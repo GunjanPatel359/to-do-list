@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to top left,rgb(255, 0, 0),rgb(248, 248, 74),rgb(0, 0, 255));
+    background-attachment: fixed;
+}
+.headtext{
+    color: rgb(238, 5, 5);
+    text-shadow: 0px 0px 50px #ff0202;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 70px;
+}
+.headline{
+    color: rgb(2 2 171);
+    text-shadow: 0px 0px 14px rgb(16, 16, 201);
+    margin-top: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+.container{
+    width: 65%;
+    min-width: 800px;
+    margin: auto;
+    margin-top: 30px;
+    /* border-radius: 30px; */
+    background: rgba(248, 248, 255,0.3);
+}
+.taskContainer{
+    
+
+
+    border:5px solid transparent;
+    border-image: linear-gradient(to bottom right,rgb(255, 0, 0),rgb(248, 248, 74),rgb(0, 0, 255));
+    border-image-slice: 1;
+    /* border-radius: 20px; */
+}
+.alltaskcontainer{
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 40px;
+    padding-top: 20px;
+}
+.createTask{
+    margin: auto;
+    align-items: center;
+    background: rgba(255, 255, 255,0.3) ;
+    margin-top: 40px;
+    width: 200px;
+    height: 250px;
+    border:1px solid black;
+    border-radius: 30px;
+}
+.icon {
+    line-height: 57px;
+    width: 80px;
+    height: 80px;
+    font-size: 80px;
+    font-weight: bolder;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    margin: auto; 
+    margin-top: 50px;
+}
+.createTaskText{
+    text-align: center;
+    margin-top: 50px;
+}
+.tasks{
+    background: rgba(255, 255, 255,0.3) ;
+    margin-top: 40px;
+    width: 200px;
+    height: 250px;
+    border:1px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.name{
+    font-size: 30px;
+    text-align: center; 
+}
+.taskName{
+    font-size: 20px;
+    text-align: center; 
+}
+.btnGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.editBtn{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to bottom right,blue ,rgb(38, 38, 255),rgb(94, 94, 247),rgb(132, 132, 240),rgb(192, 192, 255),ghostwhite);
+    font-weight: 600;
+    font-size: 20px;
+    width:80px;
+    border: 2px solid rgb(5, 3, 165);
+    border-radius: 20px;
+}
+.editBtn:hover{
+    background: ghostwhite;
+    color: blue;
+    text-shadow: 0px 0px 60px blue;
+    transition: all 0.2s linear;
+}
+.deleteBtn{
+    color: white;
+    background: linear-gradient(to bottom right,red ,rgb(255, 31, 31),rgb(255, 87, 87),rgb(255, 124, 124),rgb(255, 173, 173),ghostwhite);
+    font-weight: 600;
+    font-size: 20px;
+    width: 80px;
+    border: 2px solid rgb(197, 4, 4);
+    border-radius: 20px;
+}
+.deleteBtn:hover{
+    background: ghostwhite;
+    color: red;
+    text-shadow: 0px 0px 60px red;
+    transition: all 0.2s linear;
+}
+
+/* create task form */
+.form{
+    position: fixed;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+.submit{
+    font-size: 17px;
+    width:80px;
+    cursor: pointer;
+}
+.reset{
+    font-size: 17px;
+    width:80px;
+    cursor: pointer;
+}
+.cancel{
+    width: 80px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
